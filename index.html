@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workbench</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-info bg-primary py-3 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coder's Workbench</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+
+                <!-- Adding this ms-auto below this line constraint the nav-items at the end-->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Learn
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                            <li><a class="dropdown-item" href="#">HTML5/CSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button">
+                            About
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav" id="register">
+
+                    <li class="nav-item"><a class="nav-link" href="#offcanvas-sign" id="navbarDarkDropdownMenuLink"
+                            role="button" data-bs-toggle="offcanvas">Log-in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#offcanvas" id="navbarDarkDropdownMenuLink"
+                            role="button" data-bs-toggle="offcanvas">Sign-up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Start of Card1 -->
+
+    <section>
+        <div class=" container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mt-2">
+                    <div class=" card h-100" style="width: 22rem;">
+                        <img src="./assets/python-logo.png" class="card-img-top h-100" alt="Python logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text"><small> ... is an object-oriented, high-level programming
+                                    language with integrated dynamic semantics
+                                    primarily for web and app development. It is extremely attractive in the field of
+                                    Rapid
+                                    Application Development because
+                                    it offers dynamic typing and dynamic binding options.</small></p>
+                            <a href="course-python.html" class="btn btn-primary mt-auto">Learn Python</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- End of Card1-->
+
+                <!-- Start of Card2-->
+
+                <div class="col-md-6 col-lg-4 mt-2">
+                    <div class="card h-100" style="width: 22rem;">
+                        <img src="./assets/javascript-logo-transparent.png" class="card-img-top h-100"
+                            alt="JavaScript logo">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text"><small>JavaScript (often shortened to JS) is a lightweight,
+                                    interpreted,
+                                    object-oriented language with first-class functions,
+                                    and is best known as the scripting language for Web pages, but can also be used in
+                                    many
+                                    non-browser environments as well.</small></p>
+                            <a href="course-javascript.html" class="btn btn-primary mt-auto">Learn JavaScript</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- End of Card2-->
+
+                <!--  Start of Card3 -->
+
+                <div class="col-md-6 col-lg-4 mt-2">
+                    <div class="card h-100" style="width: 22rem;">
+                        <img src="./assets/html5-logo-css-3.png" class="card-img-top h-100 mt-2" alt="html logo">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML5/CSS</h5>
+                            <p class="card-text"><small> ... is the fifth release for the Hypertext Markup Language.
+                                    This is
+                                    the
+                                    major markup language used to define and
+                                    structure content on web pages.</small></p>
+                            <p class="card-text"><small> CSS revolutionized how to define the layout of webpages, most
+                                    of which were
+                                    built on HTML. By defining pages on a separate file called a style sheet, a great
+                                    deal of
+                                    consistency was brought about.</small></p>
+                            <a href="course-html-css.html" class="btn btn-primary mt-auto">Learn HTML5/CSS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- End of Cards -->
+    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvas"
+        aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header bg-primary">
+            <h5 class="offcanvas-title" id="sign-up-Label">Sign-up here:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body offcanvas-reg">
+            <p>Please fill in this form to create an account</p>
+            <form action="" class="reg-offcanvas">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" value="Dops">
+                <label for="lname" id="lname" name="lname">Last name</label>
+                <input type="text" id="lname" name="lname" value="Lorica">
+                <label for="email">Email</label>
+                <input type="email" required>
+                <label for="password">Password</label>
+                <input type="password" name="" id="password">
+                <label for="re-passwd" id="passwd-register">Retype password</label>
+                <input type="password" name="" id="passwd-retype">
+                <label for="gender" style="margin-top: 5px">Gender</label><br>
+                <input type="radio">
+                <label for="text" id="male">Male</label><br>
+                <input type="radio">
+                <label for="text" id="female">Female</label>
+
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+
+    <!-- End of offcanvas register -->
+
+    <!-- Start of offfcanvas sign-in -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-sign" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="login-Label">Use your credentials to log-in:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body offcanvas-login">
+            <form action="" class="login-offcanvas">
+                <label for="fname">E-mail / Username</label>
+                <input type="email" id="username" name="username" placeholder="Your email or username">
+                <label for="lname" id="password" name="passwword">Password</label>
+                <input type="password" id="password" name="password" Placeholder="********">
+                <p><small> If you can't log-in, consider <a href="offcanvas">signing-up</a> </small></p>
+                <input type="submit" value="Log-in">
+            </form>
+        </div>
+    </div>
+
+    <!-- Temporary placeholder -->
+
+
+    <!-- <h1>Welcome to Code Workbench</h1> -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

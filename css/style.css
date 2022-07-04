@@ -1,0 +1,100 @@
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+    --red: #b83333;
+    --bg: #f8d196;
+    --background: #f1e3cc;
+    --offcanvas: #f7e1a6;
+    --offcanvas-sign: #f7e1a6;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body::before {
+    display: block;
+    content: "";
+    height: 60px;
+}
+
+#register {
+    padding-left: 3em;
+}
+
+body {
+    background: var(--background);
+}
+
+.offcanvas-body {
+    background-color: var(--offcanvas);
+}
+
+.offcanvas-reg {
+    background-color: rgb(102, 190, 241);
+    display: block;
+    /* padding: 12px, 20px; */
+
+}
+
+input[type=text],
+select {
+    width: 75%;
+    display: block;
+    padding: 12px, 20px;
+    margin-top: 3px;
+    border-radius: 5%;
+
+}
+
+input[type=email] {
+    width: 75%;
+    display: block;
+    padding: 12px, 20px;
+    margin-top: 3px;
+    border-radius: 5%;
+}
+
+input[type=password] {
+    width: 75%;
+    display: block;
+    padding: 12px, 20px;
+    margin-top: 3px;
+    border-radius: 5%;
+}
+
+input[type=submit] {
+    width: 50%;
+    display: block;
+    padding: 12px, 20px;
+    margin-top: 5px;
+    border-radius: 5%;
+}
+
+label[type=password] {
+    padding: 5px;
+    width: 80%;
+}
+
+
+/* .login-header {
+    background-color: #f8d470; */
+
+
+
+section {
+    display: flex;
+    padding: 50px;
+    margin: 5px;
+}
+
+.container {
+    background-color: #e6d8c3;
+}
+
+
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
