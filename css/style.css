@@ -6,6 +6,7 @@
     --background: #f1e3cc;
     --offcanvas: #f7e1a6;
     --offcanvas-sign: #f7e1a6;
+    --grad-color-2: #e9b478;
 }
 
 html {
@@ -23,7 +24,7 @@ body::before {
 }
 
 body {
-    background: var(--background);
+    background-color: #f8e8d1;
 }
 
 .offcanvas-body {
