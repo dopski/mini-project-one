@@ -23,9 +23,7 @@ body::before {
     padding-left: 3em;
 }
 
-body {
-    background-color: #f8e8d1;
-}
+
 
 .offcanvas-body {
     background-color: var(--offcanvas);
@@ -89,10 +87,10 @@ section {
     margin: 5px;
 }
 
-.container {
-    background-color: #e6d8c3;
-}
 
+.container {
+    display: grid;
+}
 
 @media (min-width: 768px) {
     .news-input {
